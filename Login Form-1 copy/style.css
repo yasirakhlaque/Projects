@@ -1,0 +1,77 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(buildings-1850129_640.jpg);
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    background-color: grey;
+    height: 60vh;
+    width:50vh;
+    border-radius: 5%;
+    background: url('looking-directly-up-at-the-skyli.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-shadow: 15px 15px 5px rgba(0,0,0,0.6);
+}
+.container:hover{
+    scale: 1.03;
+    transition-duration: 1.1s;
+}
+form{
+    backdrop-filter: brightness(40%) ;
+    display: block;
+    box-sizing: border-box;
+    padding: 40px;
+    flex-direction: column;
+    display: flex;
+    gap: 9px;
+}
+h1{
+    color:white;
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+label{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+input{
+    background:rgba(255,255,255,0.3);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 38px;
+    padding: 0px 20px;
+    border: none;
+    margin-bottom: 20px;
+    color: white;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+
+}
+button{
+    background-color: rgba(1, 115, 223, 0.904);
+    height: 34px;
+    border-radius: 14px;
+    border: none;
+    color:wheat;
+    text-transform: uppercase;
+    line-height: 40px;
+    margin:10px 0px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+}
+button:hover{
+    scale: 0.91;
+    transition-duration: 0.8s;
+}
