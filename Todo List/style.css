@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(177, 110, 47, 1) 19%, rgba(247, 74, 47, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo {
+    border-radius: 7px;
+    text-align: center;
+    background-color: #fff;
+    width: 85vh;
+}
+
+ul {
+    margin-top: 5vh;
+    list-style: none;
+}
+
+li{
+    /* had to add this in github  */
+    margin: 3vh;
+    border-bottom: 1px solid grey;
+    display: flex;
+    padding: 0 5vh;
+    margin: 3vh;
+    justify-content:space-between;
+    align-items: center;
+}
+
+input[type="text"] {
+    height: 6vh;
+    width: 75%;
+    padding-left: 13px;
+    border-radius: 13px;
+    border: none;
+}
+
+.delete {
+    /* had to update this in github */
+
+    background: rgb(241, 53, 32);
+    background: linear-gradient(90deg, rgba(241, 53, 32, 1) 0%, rgba(245, 17, 48, 1) 19%, rgba(252, 78, 69, 1) 100%);
+    margin-bottom: 2vh;;
+}
+
+button {
+    background: rgb(241, 53, 32);
+    background: linear-gradient(90deg, rgba(241, 53, 32, 1) 0%, rgba(245, 112, 17, 1) 19%, rgba(247, 74, 47, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    height: 6vh;
+    width: 14vh;
+    border: none;
+    border-radius: 13px;
+    font-weight: 600;
+}
+
+button:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}

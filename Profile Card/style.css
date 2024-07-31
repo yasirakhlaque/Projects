@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width:100%;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,9,121,1) 35%, rgba(67,34,201,1) 74%, rgba(255,0,245,1) 100%);
+}
+.card{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    height:65vh;
+    width: 45vh;
+    background-color: #fff;
+    transform: translate(-50%,-50%);
+    border-radius: 33px;
+    box-shadow: 0px 0px 40px  rgba(15, 14, 14, 0.473);
+}
+svg{
+    position: absolute;
+    border-radius:33px ;
+}
+.pic{
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+}
+img{
+    position: relative;
+    height: 20vh;
+    border-radius: 50%;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.content{
+    height:35vh;
+    width:100%;
+    position: relative;
+    top:46%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+}
+span{
+    opacity: 0.6;
+}
+ul{
+    height:6vh;
+    list-style: none;
+    display: flex;
+}
+li{
+    padding:10px;
+}
+i{
+    color:black;
+}
+p{
+    height: 15vh;
+    width: 100%;
+    font-size: small;
+    font-weight:500;
+    text-align: center;
+}
+.btns{
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+button{
+    height: 5vh;
+    width: 16vh;
+    border-radius: 19px;
+    cursor: pointer;
+}
+.follow{
+    border: none;
+    background-color: rgba(206, 31, 197, 0.856);
+    color:white;
+}
+.msg{
+    border: 1px solid grey;
+    color:rgba(0, 0, 0, 0.671);
+}
