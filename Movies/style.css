@@ -6,7 +6,7 @@
 }
 
 .main{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.938);
     /* overflow: hidden; */
@@ -67,9 +67,15 @@ li.active{
 }
 
 .side{
-    height: 91vh;
+    height: 101vh;
     width: 20%;
     background-color: rgb(34, 33, 33);
+    overflow: scroll;
+}
+
+::-webkit-scrollbar{
+    visibility: hidden;
+    display: none;
 }
 
 .cat{
@@ -96,8 +102,8 @@ li.active{
     height: auto;
     grid-gap: 1vh;
     margin: 3vh;
-    height:35vh;
-    overflow: hidden;
+    height:45vh;
+    overflow: scroll;
 }
 
 .rated h3{
@@ -135,17 +141,28 @@ img{
     background-color: black;
     height:30vh;
     width:100%;
+    overflow-x: auto;
 }
 
 .area1{
-    display: flex;
+    display: inline-flex;
     padding: 1vh 2vh;
     gap: 5vh;
-    flex-wrap: wrap;
 }
 
-h2{
+.recommend h2,
+.latest h2 {
     color: #fff;
+    padding-left: 3vh;
+}
+
+h4 , p , .rate{
+    color:rgb(0, 0, 0);
+}
+
+p , .rate{
+    font-size: small;
+    font-weight: 600;
 }
 
 .cards{
@@ -163,29 +180,27 @@ h2{
     right: 0;
     bottom: 0;
     left: 0;
+    width: 100%;
+    height:7vh;
 }
 
 .des .name{
-    padding-right: 20px;
+    width:13vh;
+    overflow-x: auto;
+    padding-right: 19px;
     padding-left: 3px;
     border-right: 1px solid rgba(59, 58, 58, 0.438);
 }
 
-.section .area .latest {
-    background-color: red;
-    height: 27vh;
-    width: 100%;
-}
-
 .section .area .latest{
     background-color: black;
-    height:27vh;
+    height:35vh;
     width:100%;
+    overflow-x: auto;
 }
 
 .section .area2{
-    display: flex;
+    display: inline-flex;
     padding: 1vh 2vh;
     gap: 5vh;
-    flex-wrap: wrap;
 }
