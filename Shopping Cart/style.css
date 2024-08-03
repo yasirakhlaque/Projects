@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box ;
+    font-family: "Poppins", sans-serif;
 }
 
 .main{
-    background-color: #ce7373;
+    background-color: #dad5d5;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -38,6 +39,7 @@ aside ul li{
 
 aside ul li:hover{
     border:2px solid rgb(36, 21, 236);
+    border-radius: 5px;
 }
 
 
@@ -52,6 +54,7 @@ img {
 }
 
 .preview img{
+    border-radius: 7px;
     padding: 11px;
     border: 1px solid rgba(0, 0, 0, 0.575);
 }
@@ -67,6 +70,7 @@ img {
 }
 
 .abt p{
+    font-size: 12px;
     text-align: center;
     padding: 5px;
 }
@@ -97,6 +101,14 @@ img {
     height:14vh ;
     display: flex;
     flex-direction: column;
+}
+
+.btn h4{
+    font-size: 15px;
+}
+
+.btn i{
+    padding-left: 9px;
 }
 
 .btn button{

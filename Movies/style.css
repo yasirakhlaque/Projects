@@ -5,11 +5,12 @@
     font-family: "Poppins", sans-serif;
 }
 
+
+
 .main{
     height: 110vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.938);
-    /* overflow: hidden; */
+    background-color: rgba(219, 202, 202, 0.938);
 }
 .nav{
     color: beige;
