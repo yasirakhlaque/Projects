@@ -1,39 +1,53 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "poppins",sans-serif;
+    font-family: "poppins", sans-serif;
 }
 
-body{
+/* body{
     background: rgb(230,221,220);
 background: linear-gradient(90deg, rgba(230,221,220,1) 0%, rgba(230,213,212,1) 100%);
-}
+} */
 
-.main{
+.main {
     height: auto;
-    width:100%;
+    width: 100%;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-evenly;
-    margin:3vh 0;
+    margin: 3vh 3vw;
+    box-shadow: 0px 0px 30px rgba(133, 131, 131, 0.753);
+    height: 5vh;
+    padding: 3px;
+    border-radius: 25px;
+
 }
 
-nav ul{
+nav ul {
     display: flex;
 }
 
-nav li{
+nav li {
     font-weight: 500;
     list-style: none;
     padding: 0 2vw;
     cursor: pointer;
 }
 
-nav li:hover{
-    color:orange
+nav input {
+    border-radius: 25px;
+    border: 1px solid rgba(128, 128, 128, 0.507);
+}
+
+nav input[type="search"] {
+    padding-left: 14px;
+}
+
+nav li:hover {
+    color: orange
 }
 
 .home {
@@ -42,21 +56,23 @@ nav li:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.details{
-    width:28vw;
+.details {
+    width: 28vw;
+
 }
 
-.details h4{
+.details h4 {
     color: rgb(255, 102, 0);
 }
 
-.details p{
+.details p {
     font-size: small;
 }
 
-.details button{
+.details button {
     background-color: rgb(255, 102, 0);
     border: none;
     border-radius: 25px;
@@ -65,11 +81,16 @@ nav li:hover{
     width: 18vh;
 }
 
-.details button i{
+.details button:hover {
+    opacity: 0.9;
+    border: 2px solid red;
+}
+
+.details button i {
     padding-left: 5px;
 }
 
-.details .payment{
+.details .payment {
     margin-top: 5vh;
 }
 
@@ -78,11 +99,195 @@ nav li:hover{
     display: flex;
 }
 
-.details .payment ul li{
+.details .payment ul li {
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 15vh;
     border: 1px solid rgba(128, 128, 128, 0.445);
+}
+
+.details img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7vh 25vh;
+    height: 22vh;
+}
+
+.cards .free,
+.return,
+.service {
+    border-radius: 5px;
+    background-color: rgba(41, 228, 41, 0.308);
+    text-align: center;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 0 1vh
+}
+
+/* .cards .free::before{
+    content: '';
+    background-color: green;
+    height: 7vh;
+    width: 9vh;
+    position: relative;
+    left: -10vw;
+    top: -3vh;
+} */
+
+.cards .return {
+    background-color: rgba(228, 194, 41, 0.452);
+}
+
+.cards .service {
+    background-color: rgba(41, 75, 228, 0.233);
+}
+
+.Catelogues {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+}
+
+.Catelogues .image {
+    text-align: center;
+}
+
+.Catelogues .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 126px 126px 0 0;
+}
+
+.Catelogues .abt {
+    margin: 15vh;
+}
+
+.Catelogues .abt span {
+    color: rgb(255, 102, 0);
+}
+
+.Catelogues button {
+    background-color: rgb(255, 102, 0);
+    border: none;
+    height: 6vh;
+    width: 15vh;
+    border-radius: 25px;
+}
+
+.Catelogues button i {
+    padding-left: 6px;
+}
+
+.Cat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.Cat img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 0 15vh;
+    border-radius: 122vh 122vh 0 0;
+}
+
+.Cat .img1,
+.img2 {
+    height: 62vh;
+    text-align: center;
+}
+
+.Social {
+    margin-top: 27vh;
+    display: flex;
+    height: 45vh;
+    width: 100%;
+}
+
+.Social img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Social .image1,
+.image2,
+.image3,
+.image4 {
+    margin: 0 9vh;
+    height: 45vh;
+    width: 32vh;
+}
+
+
+.Social .image1 p,
+.image2 p,
+.image3 p,
+.image4 p {
+    font-size: small;
+}
+
+
+.Social .image1 button,
+.image2 button,
+.image3 button,
+.image4 button {
+    height: 6vh;
+    width: 10vh;
+    background-color: rgb(255, 102, 0);
+    border: none;
+}
+
+.Social .des {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot {
+    text-align: center;
+    padding-top: 6vh;
+    margin-top: 45vh;
+    width: 100%;
+    height: 60vh;
+    background: rgb(190, 62, 27);
+    background: linear-gradient(90deg, rgba(190, 62, 27, 1) 0%, rgba(249, 71, 11, 1) 39%, rgba(246, 83, 13, 1) 100%);
+}
+
+.foot footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    padding: 5vh;
+}
+
+footer ul li{
+    list-style: none;
+    padding: 1vh 0;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: black;
 }
