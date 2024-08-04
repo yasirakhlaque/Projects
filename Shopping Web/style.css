@@ -263,31 +263,76 @@ nav li:hover {
 }
 
 .foot {
+    margin-top: 46vh;
     text-align: center;
     padding-top: 6vh;
-    margin-top: 45vh;
+    padding-bottom: 3vh;
     width: 100%;
-    height: 60vh;
     background: rgb(190, 62, 27);
     background: linear-gradient(90deg, rgba(190, 62, 27, 1) 0%, rgba(249, 71, 11, 1) 39%, rgba(246, 83, 13, 1) 100%);
 }
 
 .foot footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2vh 0;
+}
+
+footer h3 {
+    margin-bottom: 2vh;
+    color: white;
 }
 
 footer ul {
-    padding: 5vh;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-footer ul li{
-    list-style: none;
+footer ul li {
     padding: 1vh 0;
 }
 
-footer ul li a{
+footer ul li a {
     text-decoration: none;
     color: black;
+}
+
+footer p {
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input[type="email"] {
+    padding: 0.5vh;
+    margin-bottom: 1vh;
+    border: none;
+    border-radius: 2px;
+    width: 80%;
+}
+
+form button {
+    padding: 0.5vh 1vh;
+    border: none;
+    border-radius: 2px;
+    background-color: #f4530d;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d4420b;
+}
+
+.option1 i ,
+.option2 i ,
+.option3 i ,
+.option4 i{
+    padding-right: 4px;
 }
