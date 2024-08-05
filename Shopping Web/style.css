@@ -46,8 +46,17 @@ nav input[type="search"] {
     padding-left: 14px;
 }
 
-nav li:hover {
+nav a:hover {
     color: orange
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.active{
+    color: rgb(255, 102, 0);
 }
 
 .home {
