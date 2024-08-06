@@ -226,9 +226,15 @@ a{
 
 .Social {
     margin-top: 27vh;
-    display: flex;
-    height: 45vh;
+    display: inline-flex;
+    overflow-x: auto;
+    height: 65vh;
     width: 100%;
+}
+
+::-webkit-scrollbar{
+    visibility: none;
+    display: none;
 }
 
 .Social img {

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100%;
+}
+
+.main .slider{
+    background-color: black;
+    height: 48vh;
+    width:40vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .slider .btn{
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.main .slider .btn button{
+    height: 5vh;
+    width:5vh;
+    border-radius: 50%;
+    border: none;
+    opacity: .4;
+}
+
+.slider .btn button:hover{
+    opacity: 1;
+}
+
+.slider img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
