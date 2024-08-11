@@ -7,7 +7,7 @@ like login forms , front-end work of webpages this is the private repo only few 
 I love to create projects on web development.
 
 
-| Command | Description |
+| Project | Link |
 | --- | --- |
 | Login Form - 5 | <a href="https://yasirakhlaque.github.io/Projects/Login%20Form%20-%205">Link</a> |
 | Login Form - 6 | <a href ="https://yasirakhlaque.github.io/Projects/Login%20Form%20-%206">Link</a> |
