@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111111;
+}
+
+.main .container{
+    background-color: #fff;
+    height: 72vh;
+    width:43vw;
+}
+
+.main .container input[type=number]{
+    height: 8vh;
+    width: 100%;
+    border: none;
+    padding-left: 25vh;
+}
+
+.btns{
+    margin: 3px;
+}
+
+.btns button{
+    border-radius: 8px;
+    border: none;
+    color: wheat;
+    background-color: #141414;
+    height: 8vh;
+    width:10vh;
+    margin-top: 8px;
+}
+
+button.equal
+,button.AC ,
+button.arrow{
+    background-color: #e25311;
+}

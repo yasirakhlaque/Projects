@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.918);
+    flex-direction: column;
+}
+
+.container .card{
+    height:20vh;
+    width:90%;
+    background-color: rgba(0, 0, 0, 0.418);
+    display: flex;
+    border-radius: 6px;
+}
+
+.container .card .thumbnail{
+    height:18vh;
+    width:30vh;
+    background-color: #fff;
+    margin: 1vh;
+    border-radius: 5px;
+    position: relative;
+}
+
+.thumbnail img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.thumbnail .time{
+    position:absolute;
+    bottom: 0;
+    right: 3px;
+    color:#fff;
+    font-size: small;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+.card h4{
+    color:#fff
+}
+
+.card .info{
+    margin-top: 3vh;
+}
+
+.details ul{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    opacity: .56;
+}
+ul li.ChName{
+    list-style: none;
+}
