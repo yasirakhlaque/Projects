@@ -18,4 +18,4 @@ I love to create projects on web development.
 | Shopping Cart | <a href ="https://yasirakhlaque.github.io/Projects/Shopping%20Cart">Link</a> |
 | Shopping Web | <a href ="https://yasirakhlaque.github.io/Projects/Shopping%20Web">Link</a> |
 | Todo List | <a href ="https://yasirakhlaque.github.io/Projects/Todo%20List">Link</a> |
-| Smaon Says Game | <a href ="https://yasirakhlaque.github.io/Projects/simaon%20says%20game">Link</a> |
+| Simon Says Game | <a href ="https://yasirakhlaque.github.io/Projects/simon%20says%20game">Link</a> |
