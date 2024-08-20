@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #008afc;
+}
+
+.main .section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:50vh;
+    width:60vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0, 0, 0.4);
+}
+
+.section .head{
+    font-size: larger;
+    font-weight: 700;
+}
+
+.section .guess{
+    margin: 2vh;
+    font-weight: 600;
+    font-size: 3vh;
+}
+
+.section input[type="number"]{
+    margin: 3vh;
+    height: 7vh;
+    width: 20vh;
+    padding-left: 3vh;
+}
+
+.section button{
+    height: 6vh;
+    width: 14vh;
+    cursor: pointer;
+    border: none;
+    background-color: #008afc;
+    color: #fff;
+    border-radius: 5px;
+    transition: scale 0.3s ease;
+}
+
+.section button:hover{
+    scale: 0.99;
+}
+
+.section .Remain{
+    margin-top: 5vh;
+    font-weight: 600;
+    font-size: larger;
+}
+
