@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="gradient-box"></div>
+            <div class="select-area">
+                <div class="select-box">
+                    <p>Directions</p>
+                    <select>
+                        <option value="To top">Top</option>
+                        <option value="To right top">Right Top</option>
+                        <option value="To right">Right</option>
+                        <option value="To right bottom">Right Bottom</option>
+                        <option value="To bottom">Bottom</option>
+                        <option value="To left bottom">Left Bottom</option>
+                        <option value="To left">Left</option>
+                        <option value="To left top">Top</option>
+                    </select>
+                </div>
+                <div class="input-color">
+                    <p>Color</p>
+                    <input type="color" name="color" class="color1">
+                    <input type="color" name="color" class="color2">
+                </div>
+            </div>
+            <div class="textarea-section">
+                <textarea class="text"> background: linear-gradient(to left top , #977DFE , #6878FF);</textarea>
+            </div>
+            <div class="btns">
+                <button class="refresh">Refresh Colors</button>
+                <button class="copy">Copy Code</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
