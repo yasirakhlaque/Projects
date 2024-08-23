@@ -1,6 +1,6 @@
 const btn = document.querySelector('.search');
 
-function Data(image, Name, age, cgpa, langKnown, instaLink, linkedinLink, githubLink) {
+function Data(image, Name, age,info, cgpa, langKnown, instaLink, linkedinLink, githubLink) {
 
     const html = ` <div class="imgbox">
                     <div class="img">
@@ -16,7 +16,7 @@ function Data(image, Name, age, cgpa, langKnown, instaLink, linkedinLink, github
                     <p>age :<span class="age">${age}</span></p>
                     <div class="abt">
                         <h4>About</h4>
-                        <p>He Is a very good boy . he is currently pursuing B.E. CSE from I.E.T. Khandari</p>
+                        <p>${info}</p>
                         <p class="marks"> C.G.P.A. : <span class="cgpa">${cgpa}</span></p>
                         <p class="known">
                             Language known : <span class="lang">${langKnown}</span>
@@ -35,25 +35,25 @@ function Data(image, Name, age, cgpa, langKnown, instaLink, linkedinLink, github
 }
 
 function shivam() {
-    Data("shivam", "Shivam", "20", "7.5", "HTML", "https://www.instagram.com/shiiivam_singh_08?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/shivam-singh-106a782ab/", "#");
+    Data("shivam", "Shivam", "20","Pyaar Se log ise bevda khete hai dil ka accha sakal ka nhi padhne chodke sabke liye ready hai", "7.5", "HTML", "https://www.instagram.com/shiiivam_singh_08?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/shivam-singh-106a782ab/", "#");
 }
 function ayush() {
-    Data("ayush", "Ayush Gupta", "19", "5.4 +1 back", "Nothing", "https://www.instagram.com/mr_baniya_akg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/ayush-gupta-b018222ba/", "#");
+    Data("ayush", "Ayush Gupta", "19","Dusro ko disturb karne me maza aata hai , gadha hai ", "5.4 +1 back", "Nothing", "https://www.instagram.com/mr_baniya_akg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/ayush-gupta-b018222ba/", "#");
 }
 function vishnu() {
-    Data("vishnu", "Vishnu Baghel", "19", "6.1", "Gawar hai", "https://www.instagram.com/vishnubaghel01?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/vishnu-baghel-349a98302/", "#");
+    Data("vishnu", "Vishnu Baghel", "19","Padhna ki tension hai par padhna nhi hai bus maze lene ho to contact karo", "6.1", "Gawar hai", "https://www.instagram.com/vishnubaghel01?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/vishnu-baghel-349a98302/", "#");
 }
 function navedh() {
-    Data("navedh", "Navedh Jain", "39", "6.5", "bhot kuch", "#", "https://www.linkedin.com/in/navedh-jain-536466304/", "#");
+    Data("navedh", "Navedh Jain", "39","Mujhe kya kya technology aati hai mujhe hi nhi pta ", "6.5", "bhot kuch", "#", "https://www.linkedin.com/in/navedh-jain-536466304/", "#");
 }
 function aryan() {
-    Data("aryan", "Aryan Thakur", "19", "5", "Python , C , Wordpress", "https://www.instagram.com/alonestudioss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "#", "#");
+    Data("aryan", "Aryan Thakur", "19","Silent killer hu beta jab man kare football khela du ", "5", "Python , C , Wordpress", "https://www.instagram.com/alonestudioss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "#", "#");
 }
 function tanmay() {
-    Data("tanmay", "Tanmay Bhardwaj", "19", "5.1", "Ee Ka Hota Hai", "https://www.instagram.com/tanmay__bhardwaj_52/?utm_source=ig_web_button_share_sheet", "https://www.linkedin.com/in/tanmay-bhardwaj-8976b2288/", "#");
+    Data("tanmay", "Tanmay Bhardwaj", "19","Padhai humse hove na assignment hum kare na pass hum ek din padhke ho jaye", "5.1", "Ee Ka Hota Hai", "https://www.instagram.com/tanmay__bhardwaj_52/?utm_source=ig_web_button_share_sheet", "https://www.linkedin.com/in/tanmay-bhardwaj-8976b2288/", "#");
 }
 function arpit() {
-    Data("arpit", "Arpit Kashyap", "19", "7", "C", "https://www.instagram.com/arpit_kashyap76?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/arpit-kashyap-6bb45b303/", "#");
+    Data("arpit", "Arpit Kashyap", "19","Mr.UPSC khete hai log CS to bus le li UPSC ho to batao", "7", "C", "https://www.instagram.com/arpit_kashyap76?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/arpit-kashyap-6bb45b303/", "#");
 }
 
 const input = document.querySelector('.input-area input');
