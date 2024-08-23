@@ -1,9 +1,9 @@
 # Projects
-In This Repo i will add my projects so that i could not loose them and use them in future.
+This repository contains all the projects made by me only .
 
 I will add my all projects only which is created by me.
 
-like login forms , front-end work of webpages this is the private repo only few can access this
+like login forms , some mini-games , front-end work of webpages this is the private repo only few can access this
 I love to create projects on web development.
 
 
@@ -21,3 +21,4 @@ I love to create projects on web development.
 | Template | <a href ="https://yasirakhlaque.github.io/Projects/Template">Link</a> |
 | Simon Says Game | <a href ="https://yasirakhlaque.github.io/Projects/simon%20says%20game">Link</a> |
 | Guess Game | <a href ="https://yasirakhlaque.github.io/Projects/Guess%20Game">Link</a> |
+| Gradient Maker | <a href ="https://yasirakhlaque.github.io/Projects/Gradient%20maker">Link</a> |
