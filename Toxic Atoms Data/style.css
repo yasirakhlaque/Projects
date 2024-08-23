@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+
+.main{
+    height: 120vh;
+    width: 100%;
+    background: linear-gradient(rgb(113, 40, 40), rgb(16, 15, 16));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    padding: 5vh;
+}
+.main .box{
+    background-color: #0c0c0c;
+    color:aliceblue;
+    border-radius: 7px;
+    height: 70vh;
+    width: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.imgbox{
+    height: 18vh;
+    width:32vh;
+    position: relative;
+}
+
+
+.box .img{
+    height:30vh;
+    width: 25vh;
+    top: -20vh;
+    right: 4vh;
+    position: absolute;
+}
+
+.box .img img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0px 25px rgba(88, 88, 88, 0.9);
+}
+
+.box .input-area input[type="text"]{
+    padding-left: 5vh;
+    border-radius:5vh;
+    border: 1px solid rgba(0, 0, 0, 0.582);
+    height: 5vh;
+    width: 42vh;
+}
+
+button.search{
+    background-color: aqua;
+    border: none;
+    height: 5vh;
+    width: 9vh;
+    border-radius: 5vh;
+    color: #111111;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.box .abt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box .abt h4{
+    border-radius: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 5vh;
+    width: 10vh;
+    color: #0c0c0c;
+}
+
+.box .abt {
+    padding: 0 5vh;
+}
+
+p{
+    padding: 3px 0;
+}
+
+ul li a{
+    all:unset;
+}
+
+ul{
+    margin-top: 3vh;
+    font-size: 5vh;
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    list-style: none;
+    display: flex;
+}
+
+
+ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:10vh;
+    width:10vh;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+ul li:hover{
+    background-color: rgba(27, 27, 27, 0.404);
+}
