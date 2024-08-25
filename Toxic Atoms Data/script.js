@@ -53,12 +53,12 @@ function tanmay() {
     Data("tanmay", "Tanmay Bhardwaj", "19","Padhai humse hove na assignment hum kare na pass hum ek din padhke ho jaye", "5.1", "Ee Ka Hota Hai", "https://www.instagram.com/tanmay__bhardwaj_52/?utm_source=ig_web_button_share_sheet", "https://www.linkedin.com/in/tanmay-bhardwaj-8976b2288/", "#");
 }
 function arpit() {
-    Data("arpit", "Arpit Kashyap", "19","Mr.UPSC khete hai log CS to bus le li UPSC ho to batao", "7", "C", "https://www.instagram.com/arpit_kashyap76?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/arpit-kashyap-6bb45b303/", "#");
+    Data("arpit", "Arpit Kashyap", "19","Mr.UPSC khete hai log CS to bus le li UPSC ho to batao har 2 din baad humko ghar jana hota hai", "7", "C", "https://www.instagram.com/arpit_kashyap76?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/arpit-kashyap-6bb45b303/", "#");
 }
 
 const input = document.querySelector('.input-area input');
 btn.addEventListener("click" , ()=>{
-    const inputVal = input.value.trim().toLowerCase();
+   const inputVal = input.value.trim().toLowerCase();
    console.log(inputVal);
    if(inputVal=="shivam"){
     shivam();
