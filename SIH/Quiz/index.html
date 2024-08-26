@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Constitution Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Indian Constitution Quiz</h1>
+        <p>Learn more about the Indian Constitution <a href="https://www.constitutionofindia.net/" target="_blank">here</a> before starting the quiz.</p>
+        <button id="start-btn">Start Quiz</button>
+
+        <div id="quiz" class="hide">
+            <div id="question-container">
+                <p id="question"></p>
+                <div id="answer-buttons" class="btn-container"></div>
+            </div>
+            <button id="next-btn" class="hide">Next</button>
+            <p id="score" class="hide"></p>
+        </div>
+
+        <div id="end-screen" class="hide">
+            <h2>Your Final Score: <span id="final-score"></span>/10</h2>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -32,7 +32,9 @@ header {
     height: 24px;
 }
 
-
+a{
+    all: unset;
+}
 
 .banner {
     position: relative;
@@ -101,7 +103,7 @@ img:hover{
 }
 
 .card:hover{
-    background-color: #a19c9c;
+    background-color: #a3df98;
 }
 
 
