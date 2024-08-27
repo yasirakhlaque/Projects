@@ -11,11 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (rect.top <= windowHeight && rect.bottom >= 0) {
                 if (scrollTop > lastScrollTop) {
-                    // Scrolling down
                     reveal.classList.add('active', 'left-to-right');
                     reveal.classList.remove('right-to-left');
                 } else {
-                    // Scrolling up
                     reveal.classList.add('active', 'right-to-left');
                     reveal.classList.remove('left-to-right');
                 }
@@ -24,9 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     }
 
     window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll(); // Initial call to reveal elements on page load
+    revealOnScroll();
 });
