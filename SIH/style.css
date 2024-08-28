@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,7 +10,7 @@ body {
 header {
     background-color: #fff;
     padding: 10px 20px;
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc ; */
 }
 
 .header-container {
@@ -34,38 +35,144 @@ header {
 a {
     all: unset;
 }
-
-.banner {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-    filter: blur(5px);
-    transition: filter 0.4s ease-in-out;
-}
-
-img:hover {
-    filter: blur(0);
-}
-
-.banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.banner-text h2 {
-    font-size: 24px;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.banner-text p {
-    font-size: 16px;
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    position: fixed;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: none;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.navbar nav ul li a.btn-signup {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    border:2px solid transparent;
+}
+
+.navbar nav ul li a.btn-signup:hover{
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: url('flag.jpeg') no-repeat center center/cover;
+    
+}
+
+.hero .content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #000;
+}
+
+.hero h1 span {
+    color: #ec407a; /* Gradient color */
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.hero .btn-start {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: linear-gradient(to right, #ec407a, #42a5f5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero .btn-start:hover{
+    background: transparent;
+    border: 2px solid  #42a5f5;
+}
+
+.hero .small-text {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero .btn-start {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .navbar nav ul li a {
+        padding: 8px 16px;
+    }
+
+    .hero .content {
+        padding: 10px;
+    }
 }
 
 .learn-section, .games-section, .about-section {
