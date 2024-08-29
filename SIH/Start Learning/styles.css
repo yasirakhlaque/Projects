@@ -64,11 +64,26 @@ body {
     transform: scale(1.02);
 }
 
+.article-icon {
+    background-color: #f0f0f0; /* Very light grey background */
+    border-radius: 5px; /* Makes the background circular */
+    padding: 10px; /* Adds padding to create space around the icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .article-icon i {
     font-size: 1.5rem;
     color: #333;
-    margin-right: 15px;
 }
+
+
+/* .article-icon i {
+    font-size: 1.5rem;
+    color: #333;
+    margin-right: 15px;
+} */
 
 .article-text {
     flex-grow: 1;
