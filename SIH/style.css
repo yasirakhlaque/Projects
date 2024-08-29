@@ -160,7 +160,7 @@ a {
 
 .learn-section p, .games-section p, .about-section p {
     font-size: 14px;
-    color: #666;
+    color: #0a0a0a;
 }
 
 .learn-cards, .game-cards, .about-cards {
@@ -178,7 +178,12 @@ a {
     text-align: center;
     margin: 10px;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); */
+}
+
+.card i{
+    font-size: 2rem;
 }
 
 .card:hover {
@@ -186,6 +191,7 @@ a {
 }
 
 .card p {
+    font-weight: bold;
     font-size: 16px;
     margin: 5px 0;
 }
