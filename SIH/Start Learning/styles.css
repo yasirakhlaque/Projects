@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.constitution-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.intro-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro-image {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 0 20px;
+}
+
+.intro-text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+}
+
+.articles-list {
+    margin-top: 20px;
+}
+
+.articles-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.article-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.article-item:hover {
+    transform: scale(1.02);
+}
+
+.article-icon i {
+    font-size: 1.5rem;
+    color: #333;
+    margin-right: 15px;
+}
+
+.article-text {
+    flex-grow: 1;
+}
+
+.article-text h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.article-text p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.article-arrow {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.article-arrow i {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro-text h1 {
+        font-size: 0.4rem;
+    }
+
+    .intro-text p {
+        font-size: 0.8rem;
+    }
+
+    .article-text h3 {
+        font-size: 1rem;
+    }
+
+    .article-text p {
+        font-size: 0.85rem;
+    }
+}
