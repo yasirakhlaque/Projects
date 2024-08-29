@@ -13,7 +13,7 @@ body {
 
 /* Link Styles */
 a {
-    all: unset; 
+    all: unset;
 }
 
 /* Navbar Styles */
@@ -84,7 +84,8 @@ a {
 }
 
 .hero h1 span {
-    color: #ec407a; /* Gradient color */
+    color: #ec407a;
+    /* Gradient color */
 }
 
 .hero p {
@@ -334,7 +335,8 @@ a {
     gap: 20px;
 }
 
-.feedback-button, .learn-more-button {
+.feedback-button,
+.learn-more-button {
     padding: 10px 20px;
     font-size: 1rem;
     border: none;
@@ -368,7 +370,8 @@ a {
         text-align: center;
     }
 
-    .image-container, .feedback-content {
+    .image-container,
+    .feedback-content {
         max-width: 100%;
     }
 
@@ -413,6 +416,7 @@ footer {
         transform: translateX(-100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -424,6 +428,7 @@ footer {
         transform: translateX(100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
