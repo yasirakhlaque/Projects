@@ -35,25 +35,29 @@ function Data(image, Name, age,info, cgpa, langKnown, instaLink, linkedinLink, g
 }
 
 function shivam() {
-    Data("shivam", "Shivam", "20","Pyaar Se log ise bevda khete hai dil ka accha sakal ka nhi padhne chodke sabke liye ready hai", "7.5", "HTML", "https://www.instagram.com/shiiivam_singh_08?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/shivam-singh-106a782ab/", "#");
+    Data("shivam", "Shivam", "20","Pyaar Se log ise bevda khete hai dil ka accha sakal ka nhi padhne chodke sabke liye ready hai", "6", "C--", "https://www.instagram.com/shiiivam_singh_08?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/shivam-singh-106a782ab/", "#");
 }
 function ayush() {
-    Data("ayush", "Ayush Gupta", "19","Dusro ko disturb karne me maza aata hai , gadha hai ", "5.4 +1 back", "Nothing", "https://www.instagram.com/mr_baniya_akg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/ayush-gupta-b018222ba/", "#");
+    Data("ayush", "Ayush Gupta", "22","Dusro ko disturb karne me maza aata hai , gadha hai ", "5.4 +1 back", "Nothing", "https://www.instagram.com/mr_baniya_akg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/ayush-gupta-b018222ba/", "#");
 }
 function vishnu() {
-    Data("vishnu", "Vishnu Baghel", "19","Padhna ki tension hai par padhna nhi hai bus maze lene ho to contact karo", "6.1", "Gawar hai", "https://www.instagram.com/vishnubaghel01?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/vishnu-baghel-349a98302/", "#");
+    Data("vishnu", "Vishnu Baghel", "20","Padhna ki tension hai par padhna nhi hai bus maze lene ho to contact karo", "6.1", "Gawar hai", "https://www.instagram.com/vishnubaghel01?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/vishnu-baghel-349a98302/", "#");
 }
 function navedh() {
     Data("navedh", "Navedh Jain", "39","Mujhe kya kya technology aati hai mujhe hi nhi pta ", "6.5", "bhot kuch", "#", "https://www.linkedin.com/in/navedh-jain-536466304/", "#");
 }
 function aryan() {
-    Data("aryan", "Aryan Thakur", "19","Silent killer hu beta jab man kare football khela du ", "5", "Python , C , Wordpress", "https://www.instagram.com/alonestudioss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "#", "#");
+    Data("aryan", "Aryan Thakur", "20","Silent killer hu beta jab man kare football khela du ", "5", "Python , C , Wordpress", "https://www.instagram.com/alonestudioss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "#", "#");
 }
 function tanmay() {
-    Data("tanmay", "Tanmay Bhardwaj", "19","Padhai humse hove na assignment hum kare na pass hum ek din padhke ho jaye", "5.1", "Ee Ka Hota Hai", "https://www.instagram.com/tanmay__bhardwaj_52/?utm_source=ig_web_button_share_sheet", "https://www.linkedin.com/in/tanmay-bhardwaj-8976b2288/", "#");
+    Data("tanmay", "Tanmay Bhardwaj", "19","Padhai humse hove na assignment hum kare na pass hum ek din padhke ho jaye", "5.1", "Aise to koi cheez hi na hoti", "https://www.instagram.com/tanmay__bhardwaj_52/?utm_source=ig_web_button_share_sheet", "https://www.linkedin.com/in/tanmay-bhardwaj-8976b2288/", "#");
 }
 function arpit() {
     Data("arpit", "Arpit Kashyap", "19","Mr.UPSC khete hai log CS to bus le li UPSC ho to batao har 2 din baad humko ghar jana hota hai", "7", "C", "https://www.instagram.com/arpit_kashyap76?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "https://www.linkedin.com/in/arpit-kashyap-6bb45b303/", "#");
+}
+
+function mukul(){
+    Data("mukul", "Mukul Parmar", "19","Sabko lagta hai meri GF Hai to unko me ek cheez bolna cahta hu Ha Hai to !!!", "6.5", "hidden form public", "https://www.instagram.com/__mukulparmar__/", "#", "#");
 }
 
 const input = document.querySelector('.input-area input');
