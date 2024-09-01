@@ -78,6 +78,8 @@ btn.addEventListener("click" , ()=>{
     navedh();
    } else if (inputVal=="vishnu baghel" || inputVal == "vishnu"){
     vishnu();
+   } else if (inputVal == "mukul parmar" || inputVal == "mukul"){
+    mukul();
    }
    else{
     Data("#","Not Recognized");
