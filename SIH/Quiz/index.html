@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Meta Tags and Title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indian Constitution Quiz</title>
+    <title>Master the Indian Constitution Quiz</title>
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for Icons (Optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkTyL2K4o63UvbHBb8AqJnQeXyfN+JMw+8q+hN2UZbFmQ+6hXcXeTmi2dZ91Vqk+6NtwZB2gZ4W06R6w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="quiz-container">
-        <h1>Indian Constitution Quiz</h1>
-        <p>Learn more about the Indian Constitution <a href="https://www.constitutionofindia.net/" target="_blank">here</a> before starting the quiz.</p>
-        <button id="start-btn">Start Quiz</button>
-
-        <div id="quiz" class="hide">
-            <div id="question-container">
-                <p id="question"></p>
-                <div id="answer-buttons" class="btn-container"></div>
+    <!-- Header with Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">👑 Indian Quiz</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#quiz-section" class="btn">Start Quiz</a>
             </div>
-            <button id="next-btn" class="hide">Next</button>
-            <p id="score" class="hide"></p>
-        </div>
+        </nav>
+    </header>
 
-        <div id="end-screen" class="hide">
-            <h2>Your Final Score: <span id="final-score"></span>/10</h2>
-            <button id="restart-btn">Restart Quiz</button>
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="flag.jpeg" alt="Indian Flag" class="background-image">
+        <div class="hero-content">
+            <h1>Master the <span class="highlight">Indian Constitution</span></h1>
+            <p>Challenge yourself with our comprehensive quiz and deepen your understanding of India's fundamental principles and laws.</p>
+            <a href="#quiz-section" class="cta-button animate__animated animate__fadeInUp">Begin the Quiz</a>
         </div>
-    </div>
+    </section>
 
+    <!-- Quiz Section -->
+    <section id="quiz-section" class="quiz-section">
+        <div class="quiz-container">
+            <h1>Indian Constitution Quiz</h1>
+            <p>Learn more about the Indian Constitution <a href="https://www.constitutionofindia.net/" target="_blank">here</a> before starting the quiz.</p>
+            <button id="start-btn" class="start-btn">Start Quiz</button>
+
+            <div id="quiz" class="hide quiz animate__animated">
+                <div id="question-container" class="question-container">
+                    <p id="question" class="question"></p>
+                    <div id="answer-buttons" class="btn-container"></div>
+                </div>
+                <button id="next-btn" class="next-btn hide">Next</button>
+                <p id="score" class="score hide">Score: 0</p>
+            </div>
+
+            <div id="end-screen" class="hide end-screen animate__animated">
+                <h2>Your Final Score: <span id="final-score"></span>/10</h2>
+                <button id="restart-btn" class="restart-btn">Restart Quiz</button>
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>

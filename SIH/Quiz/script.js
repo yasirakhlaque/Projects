@@ -1,7 +1,8 @@
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const restartButton = document.getElementById('restart-btn');
-const quizContainer = document.getElementById('quiz');
+const quizContainer = document.querySelector('.quiz-container');
+const quizSection = document.getElementById('quiz');
 const questionContainer = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
@@ -21,10 +22,13 @@ restartButton.addEventListener('click', startGame);
 function startGame() {
     startButton.classList.add('hide');
     endScreen.classList.add('hide');
-    quizContainer.classList.remove('hide');
+    quizSection.classList.remove('hide');
+    quizSection.classList.remove('animate__fadeOut');
+    quizSection.classList.add('animate__fadeIn');
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     score = 0;
+    scoreElement.classList.add('hide');
     setNextQuestion();
 }
 
@@ -49,6 +53,7 @@ function showQuestion(question) {
 
 function resetState() {
     nextButton.classList.add('hide');
+    scoreElement.classList.add('hide');
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
@@ -56,15 +61,20 @@ function resetState() {
 
 function selectAnswer(e) {
     const selectedButton = e.target;
-    const correct = selectedButton.dataset.correct;
+    const correct = selectedButton.dataset.correct === 'true';
     setStatusClass(selectedButton, correct);
     Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct);
+        setStatusClass(button, button.dataset.correct === 'true');
+        button.disabled = true;
     });
     if (correct) {
         score++;
+        scoreElement.innerText = `Score: ${score}`;
+    } else {
+        scoreElement.innerText = `Score: ${score}`;
     }
-    scoreElement.innerText = `Score: ${score}`;
+    scoreElement.classList.remove('hide');
+
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
@@ -76,19 +86,27 @@ function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
         element.style.backgroundColor = '#28a745';
+        element.style.color = '#fff';
     } else {
         element.style.backgroundColor = '#dc3545';
+        element.style.color = '#fff';
     }
 }
 
 function clearStatusClass(element) {
-    element.style.backgroundColor = '';
+    element.style.backgroundColor = '#f0f4f8';
+    element.style.color = '#333';
 }
 
 function showFinalScore() {
-    quizContainer.classList.add('hide');
-    endScreen.classList.remove('hide');
-    finalScoreElement.innerText = score;
+    quizSection.classList.add('animate__fadeOut');
+    quizSection.classList.remove('animate__fadeIn');
+    setTimeout(() => {
+        quizSection.classList.add('hide');
+        endScreen.classList.remove('hide');
+        endScreen.classList.add('animate__fadeIn');
+        finalScoreElement.innerText = score;
+    }, 500);
 }
 
 const questions = [
