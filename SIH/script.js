@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const reveals = document.querySelectorAll('.reveal');
     let lastScrollTop = 0;
