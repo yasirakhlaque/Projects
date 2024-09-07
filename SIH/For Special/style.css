@@ -6,6 +6,11 @@ body {
     background-color: white;
 }
 
+a{
+    all: unset;
+    width: 100%;
+}
+
 .design-root {
     min-height: 100vh;
     display: flex;
