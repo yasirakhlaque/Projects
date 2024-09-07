@@ -1,0 +1,249 @@
+/* Reset some default styles */
+body, h1, h2, p, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply font family */
+  body {
+    font-family: 'Public Sans', 'Noto Sans', sans-serif;
+    background-color: #111a22;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Container for the whole page */
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #111a22;
+    border-bottom: 1px solid #243647;
+    padding: 15px 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header-content h2 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .logo i {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  /* Main content styling */
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url('https://cdn.usegalileo.ai/stability/9e0df4eb-e4d7-469a-8438-8e603f320076.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .hero-content h2 {
+    font-size: 1rem;
+  }
+  
+  .search-container {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    background-color: #1a2632;
+    border: 1px solid #344d65;
+    border-radius: 10px 0 0 10px;
+    padding: 5px;
+    flex: 1;
+  }
+  
+  .search-box i {
+    color: #93adc8;
+    font-size: 1rem;
+  }
+  
+  .search-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+  }
+  
+  .search-box input::placeholder {
+    color: #93adc8;
+  }
+  
+  .search-button {
+    background-color: #1466b8;
+    color: white;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .info h2 {
+    font-size: 1.375rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .info p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .action-buttons {
+    margin-top: 20px;
+  }
+  
+  .report-button {
+    background-color: #243647;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .feedback-form {
+    margin-top: 20px;
+  }
+  
+  .feedback-form textarea {
+    width: 100%;
+    min-height: 120px;
+    background-color: #1a2632;
+    border: 1px solid #344d65;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+  }
+  
+  .feedback-form .form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .cancel-button, .submit-button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .cancel-button {
+    background-color: #243647;
+    color: white;
+  }
+  
+  .submit-button {
+    background-color: #1466b8;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content h2 {
+      font-size: 0.875rem;
+    }
+  
+    .search-button {
+      font-size: 0.875rem;
+    }
+  
+    .info h2 {
+      font-size: 1.25rem;
+    }
+  }
+/* styles.css */
+
+  .info-boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .info-box {
+    width: 100%;
+    max-width: 300px;
+    min-height: 200px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .info-box h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+  }
+  
+  .info-box p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 600px) {
+    .info-box {
+      max-width: 100%;
+      padding: 15px;
+    }
+  }
+    

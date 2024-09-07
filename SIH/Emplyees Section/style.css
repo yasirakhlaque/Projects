@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    font-family: 'Public Sans', 'Noto Sans', sans-serif;
+    background-color: #111a22;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.design-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #243647;
+    padding: 16px 40px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-link {
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.header-buttons button {
+    background-color: #243647;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Content Styles */
+.content-container {
+    padding: 32px 20px; /* Adjusted for mobile responsiveness */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+      url('https://cdn.usegalileo.ai/stability/14278742-32b1-4cd4-a6a3-a6b202936a3f.png');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 16px;
+    text-align: left;
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.hero-text h2 {
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.search-container {
+    display: flex;
+    width: 100%;
+    max-width: 480px;
+    margin-top: 16px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 8px 16px;
+    background-color: #1a2632;
+    border: 1px solid #344d65;
+    color: white;
+    border-radius: 8px 0 0 8px;
+}
+
+.search-btn {
+    background-color: #1466b8;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+.content-section {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.section-title {
+    font-size: 1.375rem;
+    font-weight: bold;
+    padding: 16px 0;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(158px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background-color: #1a2632;
+    border: 1px solid #344d65;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card-icon-container {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.card-icon {
+    font-size: 1.5rem;
+    color: #1466b8;
+}
+
+.card-content {
+    margin-left: 40px; /* Space for the icon */
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card p {
+    color: #93adc8;
+    font-size: 0.875rem;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-buttons {
+        margin-top: 10px;
+    }
+
+    .content-container {
+        padding: 32px 10px;
+    }
+    
+    .hero {
+        padding: 20px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-text h2 {
+        font-size: 0.875rem;
+    }
+    
+    .search-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .search-input {
+        border-radius: 8px;
+    }
+    
+    .search-btn {
+        border-radius: 8px;
+    }
+}
