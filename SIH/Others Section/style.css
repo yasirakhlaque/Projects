@@ -87,7 +87,16 @@
     flex-direction: column;
     gap: 10px;
     text-align: center;
+    transition: scale .1s ease-in-out;
   }
+
+.card:active{
+    scale: 1.2;
+}
+
+ .card:hover{
+    cursor: pointer;
+ }
 
   .card i {
     font-size: 1.5rem;
