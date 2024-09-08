@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+    background-color: #ffffff;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    border-bottom: 1px solid #f0f2f5;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo-container h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111518;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-bar input {
+    border: none;
+    background-color: #f0f2f5;
+    border-radius: 0 12px 12px 0;
+    padding: 10px;
+    outline: none;
+    width: 250px;
+    color: #111518;
+  }
+
+  .search-bar .search-icon {
+    background-color: #f0f2f5;
+    padding: 10px;
+    border-radius: 12px 0 0 12px;
+  }
+
+  .auth-btn {
+    background-color: #2094f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    background-image: url("pfp\ others.jpg");
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  .container {
+    padding: 30px 40px;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(158px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    background-color: white;
+    border: 1px solid #dbe1e6;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .card i {
+    font-size: 1.5rem;
+    color: #111518;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111518;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+    color: #60778a;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+
+    header {
+      padding: 10px 20px;
+    }
+
+    .search-bar input {
+      width: 180px;
+    }
+  }
