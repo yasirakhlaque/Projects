@@ -65,30 +65,43 @@ a {
 
 /* Hero Section */
 .hero {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 100vh;
-    background: url('Images/flag.jpeg') no-repeat center center/cover;
+    overflow: hidden;
+}
+
+.hero .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .hero .content {
+    position: relative;
     max-width: 600px;
     padding: 20px;
+    z-index: 1;
 }
 
 .hero h1 {
     font-size: 48px;
-    color: #000;
+    color: #ffffff;
 }
 
 .hero h1 span {
     color: #ec407a;
-    /* Gradient color */
 }
 
 .hero p {
+    color:white;
     font-size: 18px;
     margin-top: 20px;
 }
@@ -112,6 +125,7 @@ a {
 }
 
 .hero .small-text {
+    color:white;
     margin-top: 10px;
     font-size: 14px;
 }
