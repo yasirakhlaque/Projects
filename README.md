@@ -23,3 +23,4 @@ I love to create projects on web development.
 | Simon Says Game | <a href ="https://yasirakhlaque.github.io/Projects/Games/simon%20says%20game">Link</a> |
 | Guess Game | <a href ="https://yasirakhlaque.github.io/Projects/Games/Guess%20Game">Link</a> |
 | Gradient Maker | <a href ="https://yasirakhlaque.github.io/Projects/Miscellaneous/Gradient%20maker">Link</a> |
+| Dictonary | <a href ="https://yasirakhlaque.github.io/Projects/Mini-Projects/Dictonary">Link</a> |
