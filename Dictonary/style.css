@@ -84,6 +84,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: scroll;
+}
+
+.container .solution .wrapper::-webkit-scrollbar{
+    display: none;
+    visibility: hidden;
 }
 
 .container .active {
