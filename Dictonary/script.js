@@ -5,7 +5,9 @@ const soultion = document.querySelector('.solution'),
     meaning = document.querySelector('.wrapper .meaning'),
     first = document.querySelector('.synonym .first'),
     second = document.querySelector('.synonym .second'),
-    examples = document.querySelector('.wrapper .example');
+    synonyms = document.querySelector('.synonym')
+examples = document.querySelector('.wrapper .example');
+
 
 function data(result, word) {
     if (result.title) {
@@ -17,14 +19,14 @@ function data(result, word) {
         mean.innerText = result[0].word;
         meaning.innerText = definitions.definition;
 
-        if(definitions.example==''){
-            examples.innerText=`No Exapmles found`;
-        }else{
+        if (result[0].meanings[0].definitions[0] != result[0].meanings[0].definitions[0].example) {
+            examples.innerText = `No Exapmles found`;
+        } else {
             examples.innerText = definitions.example;
         }
 
         if (result[0].meanings[0].synonyms == '') {
-            document.querySelector('.synonym').innerHTML = `No Synonym found`;
+            synonyms.innerHTML = `No Synonym found`;
         } else {
             first.innerText = result[0].meanings[0].synonyms;
             second.innerText = result[0].meanings[1].synonyms;

@@ -92,6 +92,14 @@
     visibility: hidden;
 }
 
+.wrapper .synonym span{
+    text-decoration: underline;
+}
+
+.wrapper .synonym span .first{
+    padding-left: 5px;
+}
+
 .container .active {
     display: block;
 }
