@@ -53,6 +53,11 @@
     text-align: center;
 }
 
+.textarea-section textarea{
+    height: 50px;
+    width: 284px;
+}
+
 .btns{
     display: flex;
     justify-content: space-evenly;
