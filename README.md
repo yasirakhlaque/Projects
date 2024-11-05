@@ -1,4 +1,4 @@
-# Projects
+# Projects 
 This repository contains all the projects made by me only basicly practice and progress .
 
 Adding new projects every week 
