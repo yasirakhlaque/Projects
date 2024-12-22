@@ -1,10 +1,9 @@
-const select = document.querySelector('select'),
-    refresh = document.querySelector('.btns .refresh'),
-    copy = document.querySelector('.copy'),
-    color1 = document.querySelector('.color1'),
-    color2 = document.querySelector('.color2'),
-    textarea = document.querySelector("textarea");
-const Colorinp = document.querySelectorAll('.input-color input');
+const select = document.querySelector('select');
+const refresh = document.querySelector('.btns .refresh');
+const copy = document.querySelector('.copy');
+const colorCountSelect = document.querySelector('.color-count');
+const colorInputsContainer = document.querySelector('.color-inputs');
+const textarea = document.querySelector('textarea');
 const gradientBox = document.querySelector('.gradient-box');
 
 // Function to generate a random color
@@ -15,36 +14,63 @@ const RandomColor = () => {
 
 // Function to update the gradient background
 const updateGradient = () => {
-    const color1Inp = color1.value;
-    const color2Inp = color2.value;
-    const selectVal = select.value;
-    let gradient = `linear-gradient(${selectVal}, ${color1Inp}, ${color2Inp})`;
+    const colors = Array.from(colorInputsContainer.querySelectorAll('.color')).map(input => input.value);
+    const direction = select.value;
+    const gradient = `linear-gradient(${direction}, ${colors.join(', ')})`;
     gradientBox.style.background = gradient;
     textarea.textContent = `background: ${gradient};`;
 };
 
-// Event listener for the refresh button
-refresh.addEventListener("click", () => {
-    color1.value = RandomColor();
-    color2.value = RandomColor();
-    updateGradient();  // Update the gradient after random colors are generated
-});
+// Function to update the number of color inputs
+const updateColorInputs = () => {
+    const colorCount = parseInt(colorCountSelect.value, 10);
+    const currentInputs = colorInputsContainer.querySelectorAll('.color');
+    const currentCount = currentInputs.length;
 
-// Add event listeners to the color inputs
-Colorinp.forEach(input => {
-    input.addEventListener("input", updateGradient);
-});
+    if (colorCount > currentCount) {
+        for (let i = currentCount; i < colorCount; i++) {
+            const newColorInput = document.createElement('input');
+            newColorInput.type = 'color';
+            newColorInput.className = 'color';
+            newColorInput.value = RandomColor();
+            newColorInput.addEventListener('input', updateGradient);
+            colorInputsContainer.appendChild(newColorInput);
+        }
+    } else if (colorCount < currentCount) {
+        for (let i = currentCount - 1; i >= colorCount; i--) {
+            colorInputsContainer.removeChild(currentInputs[i]);
+        }
+    }
+
+    updateGradient();
+};
+
+// Add event listener to dynamically update the gradient on color input
+colorInputsContainer.addEventListener('input', updateGradient);
 
 // Add event listener to the select box
-select.addEventListener("change", updateGradient);
+select.addEventListener('change', updateGradient);
 
-// copy button working 
-copy.addEventListener("click", () => {
-    // Copy the text from the textarea to the clipboard
-    const codeToCopy = textarea.textContent;
-    navigator.clipboard.writeText(codeToCopy).then(() => {
+// Add event listener to the color count selector
+colorCountSelect.addEventListener('change', updateColorInputs);
+
+// Refresh button to randomize all colors
+refresh.addEventListener('click', () => {
+    const colorInputs = colorInputsContainer.querySelectorAll('.color');
+    colorInputs.forEach(input => {
+        input.value = RandomColor();
+    });
+    updateGradient();
+});
+
+// Copy button to copy the gradient CSS to clipboard
+copy.addEventListener('click', () => {
+    navigator.clipboard.writeText(textarea.textContent).then(() => {
         alert("CSS code copied to clipboard!");
     }).catch(err => {
         alert("Failed to copy text: " + err);
     });
 });
+
+// Initialize the gradient on page load
+updateGradient();

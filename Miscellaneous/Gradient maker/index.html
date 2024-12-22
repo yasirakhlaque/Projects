@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradient maker</title>
+    <title>Gradient Maker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,24 +16,31 @@
                 <div class="select-box">
                     <p>Directions</p>
                     <select>
-                        <option value="To top">Top</option>
-                        <option value="To right top">Right Top</option>
-                        <option value="To right">Right</option>
-                        <option value="To right bottom">Right Bottom</option>
-                        <option value="To bottom">Bottom</option>
-                        <option value="To left bottom">Left Bottom</option>
-                        <option value="To left">Left</option>
-                        <option value="To left top">Top</option>
+                        <option value="to top">Top</option>
+                        <option value="to top right">Top Right</option>
+                        <option value="to right">Right</option>
+                        <option value="to bottom right">Bottom Right</option>
+                        <option value="to bottom">Bottom</option>
+                        <option value="to bottom left">Bottom Left</option>
+                        <option value="to left">Left</option>
+                        <option value="to top left">Top Left</option>
                     </select>
                 </div>
                 <div class="input-color">
-                    <p>Color</p>
-                    <input type="color" name="color" class="color1">
-                    <input type="color" name="color" class="color2">
+                    <p>Number of Colors</p>
+                    <select class="color-count">
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <div class="color-inputs">
+                        <input type="color" class="color" value="#ff0000">
+                        <input type="color" class="color" value="#0000ff">
+                    </div>
                 </div>
             </div>
             <div class="textarea-section">
-                <textarea class="text"> background: linear-gradient(to left top , #977DFE , #6878FF);</textarea>
+                <textarea class="text" readonly>background: linear-gradient(to left top, #ff0000, #0000ff);</textarea>
             </div>
             <div class="btns">
                 <button class="refresh">Refresh Colors</button>
