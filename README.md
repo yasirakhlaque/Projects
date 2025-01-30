@@ -1,5 +1,5 @@
 # Projects  
-This repository contains all the projects made by me only basicly practice and progress .
+This repository contains all the projects made by me. They are just for the practice purpose.
 
 Adding new projects every week 
 
