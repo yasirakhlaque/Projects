@@ -1,7 +1,7 @@
 # Projects  
 This repository contains all the projects made by me. They are just for the practice purpose.
 
-Adding new projects every week 
+Adding new projects every month 
 
 I will add my all projects only which is created by me.
 
